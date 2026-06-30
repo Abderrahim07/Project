@@ -12,5 +12,5 @@ WORKDIR /app
 COPY --from=builder /app/vecu_testing_platform.html ./index.html
 RUN npm install -g serve
 
-EXPOSE 443
-CMD ["serve", "-s", ".", "-l", "443"]
+EXPOSE 3000
+CMD ["serve", "-s", ".", "-l", "3000"]
